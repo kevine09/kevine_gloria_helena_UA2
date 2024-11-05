@@ -7,7 +7,7 @@ L'application permet aux utilisateurs de se connecter, de gérer les réservatio
 
 ## Installation et configuration  
 
-1. Clonez le dépôt Git : `git clone https://github.com/kevine09/reservation-hotel.git`  
+1. Clonez le dépôt Git : `git clone https://github.com/kevine09/kevine_gloria_UA2.git`  
 2. Ouvrez le projet dans Visual Studio.  
 3. Construisez la solution et assurez-vous qu'il n'y a pas d'erreurs.  
 4. Configurez la connexion à la base de données dans le fichier `App.config`.  
@@ -32,7 +32,7 @@ Ce projet  n'a pas de licence.
 
 ## Liens utiles  
 
-- [Dépôt Git](https://github.com/kevine09/reservation-hotel)  
+- [Dépôt Git](https://github.com/kevine09/kevine_gloria_helena_UA2_)  
 - [Documentation](https://docs.google.com/document/d/1234567890/edit?usp=sharing)  
 
 ## Considérations futures  
