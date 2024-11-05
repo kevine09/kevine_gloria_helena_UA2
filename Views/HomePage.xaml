@@ -1,0 +1,54 @@
+﻿<Window x:Class="kevine_gloria_helena_UA2.Views.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kevine_gloria_helena_UA2.Views"
+        mc:Ignorable="d"
+        Title="HomePage" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Menu de navigation -->
+        <StackPanel>
+            <Button Content="Accueil" x:Name="Accueil" Margin="5 10 5 10" Click="Accueil_Click"/>
+            <Button Content="Réservations" x:Name="Reservations" Margin="5 10 5 10" Click="Reservations_Click"/>
+            <Button Content="Chambres" x:Name="Chambres" Margin="5 10 5 10" Click="Chambres_Click"/>
+            <Button Content="Clients" x:Name="Clients" Margin="5 10 5 10" Click="Clients_Click"/>
+        </StackPanel>
+
+        <!-- Espace de travail où les UserControls seront affichés -->
+        <StackPanel Grid.Column="1">
+            <ContentControl Name="EspaceDeTravail"/>
+        </StackPanel>
+
+
+        <Grid Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+
+            <!-- Statistiques -->
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Nombre total de réservations : 123" Margin="10" />
+                <TextBlock Text="Nombre de chambres disponibles : 45" Margin="10" />
+            </StackPanel>
+
+            <!-- Échéances -->
+            <ListView Grid.Row="1" Margin="10">
+                <ListViewItem>
+                    <TextBlock Text="Réservation pour le 15/04/2023" />
+                </ListViewItem>
+                <!-- Autres réservations à venir -->
+            </ListView>
+
+
+        </Grid>
+
+    </Grid>
+</Window>
